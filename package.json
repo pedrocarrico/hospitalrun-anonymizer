@@ -7,11 +7,15 @@
     "test": "mocha --recursive",
     "coverage": "istanbul cover _mocha -- --recursive"
   },
+  "pre-commit": [
+    "coverage"
+  ],
   "author": "",
   "license": "GPL-3.0",
   "devDependencies": {
     "chai": "^3.5.0",
     "istanbul": "^0.4.3",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "pre-commit": "^1.1.3"
   }
 }
